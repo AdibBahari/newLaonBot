@@ -3,7 +3,6 @@ python - <<'PY'
 from cryptography.fernet import Fernet
 k = Fernet.generate_key()
 open("fernet.key","wb").write(k)
-print("fernet.key created")
+print("fernet.key created successfully")
 PY
 chmod 600 fernet.key
-echo "FERNET key generated (fernet.key)"
